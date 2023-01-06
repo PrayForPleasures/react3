@@ -64,6 +64,12 @@ const useStyles = makeStyles((theme) => ({
   barChanges: {
     backgroundColor: "transparent",
   },
+  phone: {
+    color: "whitesmoke",
+    textDecoration: "none",
+    fontWeight: "bold",
+    marginRight: "16px",
+  },
 }));
 
 export default function Header() {
@@ -82,8 +88,11 @@ export default function Header() {
             <MenuIcon />
           </IconButton>
           <Typography className={classes.title} variant="h6" noWrap>
-            RWD TATTOO
+            RWD Tattoo Gomel
           </Typography>
+          <a className={classes.phone} href="tel:+375331234567">
+            +375 (33) 123-45-67
+          </a>
           <div className={classes.search}>
             <div className={classes.searchIcon}>
               <SearchIcon />
