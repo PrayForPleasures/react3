@@ -46,6 +46,9 @@ const useStyles = makeStyles((theme) => ({
   },
   typoStyle: {
     color: "whitesmoke",
+    fontFamily: "East Sea Dokdo",
+    fontSize: "28px",
+    marginBottom: "0",
   },
   typoStyle2: {
     color: "whitesmoke",
@@ -77,7 +80,7 @@ export default function Sections() {
         gutterBottom
         className={classes.typoStyle}
       >
-        OUR WORKS:
+        OUR WORKS
       </Typography>
       <Grid container spacing={3}>
         <Grid item xs={3}>
