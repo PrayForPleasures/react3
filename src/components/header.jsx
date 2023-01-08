@@ -8,6 +8,11 @@ import { alpha, makeStyles } from "@material-ui/core/styles";
 import MenuIcon from "@material-ui/icons/Menu";
 import SearchIcon from "@material-ui/icons/Search";
 
+function handleClick(e) {
+  e.preventDefault();
+  console.log("click");
+}
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -85,7 +90,7 @@ export default function Header() {
             color="inherit"
             aria-label="open drawer"
           >
-            <MenuIcon />
+            <MenuIcon onClick={handleClick} />
           </IconButton>
           <Typography className={classes.title} variant="h6" noWrap>
             RWD Tattoo Gomel

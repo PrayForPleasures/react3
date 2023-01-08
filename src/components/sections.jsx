@@ -6,11 +6,11 @@ import Divider from "@material-ui/core/Divider";
 import Grid from "@material-ui/core/Grid";
 import Card from "@material-ui/core/Card";
 import CardMedia from "@material-ui/core/CardMedia";
+import Slider from "./slider";
 import img1 from "../images/ph1.jpg";
 import img2 from "../images/ph2.jpg";
 import img3 from "../images/ph7.jpg";
 import img4 from "../images/ph4.jpg";
-import img5 from "../images/ph5.jpg";
 import img6 from "../images/ph6.jpg";
 
 const useStyles = makeStyles((theme) => ({
@@ -26,6 +26,7 @@ const useStyles = makeStyles((theme) => ({
     whiteSpace: "nowrap",
     marginBottom: theme.spacing(1),
     border: "2px solid #222222",
+    backgroundColor: "whitesmoke",
     boxShadow: "8px 8px 13px #000000",
     "&:hover": {
       transition: "0.3s",
@@ -33,13 +34,16 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   paper2: {
+    position: "relative",
     padding: theme.spacing(0.1),
     textAlign: "center",
     color: theme.palette.text.secondary,
     whiteSpace: "nowrap",
     marginBottom: theme.spacing(1),
-    border: "2px solid #222222",
     boxShadow: "8px 8px 13px #000000",
+    height: "98.2%",
+    backgroundColor: "whitesmoke",
+    border: "2px solid #222222",
   },
   divider: {
     margin: theme.spacing(2, 0),
@@ -90,30 +94,22 @@ export default function Sections() {
         </Grid>
         <Grid item xs={3}>
           <Card className={classes.paper}>
-            <CardMedia className={classes.media} image={img2}>
-              >
-            </CardMedia>
+            <CardMedia className={classes.media} image={img2}></CardMedia>
           </Card>
         </Grid>
         <Grid item xs={3}>
           <Card className={classes.paper}>
-            <CardMedia className={classes.media} image={img3}>
-              >
-            </CardMedia>
+            <CardMedia className={classes.media} image={img3}></CardMedia>
           </Card>
         </Grid>
         <Grid item xs={3}>
           <Card className={classes.paper}>
-            <CardMedia className={classes.media} image={img4}>
-              >
-            </CardMedia>
+            <CardMedia className={classes.media} image={img4}></CardMedia>
           </Card>
         </Grid>
         <Grid item xs={8}>
           <Card className={classes.paper2}>
-            <CardMedia className={classes.media} image={img5}>
-              >
-            </CardMedia>
+            <Slider></Slider>
           </Card>
         </Grid>
 
@@ -128,9 +124,7 @@ export default function Sections() {
             фестивалях, посещая мастер-классы и зарубежные обучающие курсы.
           </Typography>
           <Card className={classes.paper}>
-            <CardMedia className={classes.media} image={img6}>
-              >
-            </CardMedia>
+            <CardMedia className={classes.media} image={img6}></CardMedia>
           </Card>
         </Grid>
       </Grid>

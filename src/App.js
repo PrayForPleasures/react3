@@ -5,13 +5,19 @@ import { makeStyles } from "@material-ui/core/styles";
 import backImage from "./images/backPhoto.jpg";
 import { Box } from "@material-ui/core";
 
-const useStyles = makeStyles((theme) => ({}));
+const useStyles = makeStyles((theme) => ({
+  backImg: {
+    backgroundImage: `url(${backImage})`,
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+  },
+}));
 
 function App() {
   const classes = useStyles();
 
   return (
-    <div style={{ backgroundImage: `url(${backImage})` }}>
+    <div className={classes.backImg}>
       <Container>
         <Header></Header>
         <Sections></Sections>
