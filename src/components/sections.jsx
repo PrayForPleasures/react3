@@ -7,6 +7,7 @@ import Grid from "@material-ui/core/Grid";
 import Card from "@material-ui/core/Card";
 import CardMedia from "@material-ui/core/CardMedia";
 import Slider from "./slider";
+import Description from "./Description";
 import img1 from "../images/ph1.jpg";
 import img2 from "../images/ph2.jpg";
 import img3 from "../images/ph7.jpg";
@@ -46,7 +47,7 @@ const useStyles = makeStyles((theme) => ({
     border: "2px solid #222222",
   },
   divider: {
-    margin: theme.spacing(2, 0),
+    margin: theme.spacing(1, 0),
   },
   typoStyle: {
     color: "whitesmoke",
@@ -128,13 +129,14 @@ export default function Sections() {
           </Card>
         </Grid>
       </Grid>
+      <Description></Description>
       <Divider className={classes.divider} />
       <Typography
         variant="subtitle1"
         gutterBottom
         className={classes.typoStyle}
       >
-        CSS Grid Layout:
+        OUR WORKS
       </Typography>
       <div className={classes.container}>
         <div style={{ gridColumnEnd: "span 3" }}>

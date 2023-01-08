@@ -26,15 +26,15 @@ const useStyles = makeStyles((theme) => ({
   sliderImg: {
     position: "absolute",
     maxWidth: "100%",
-    transition: "all 1s",
+    transition: "1s",
     opacity: "1",
   },
   sliderImgPrev: {
-    transition: "all 3s",
+    transition: "2s",
     opacity: "0",
   },
   sliderImgNext: {
-    transition: "all 3s",
+    transition: "2s",
     opacity: "0",
   },
 }));
@@ -49,7 +49,7 @@ export default function Slider() {
         const res = current === sliderImgs.length - 1 ? 0 : current + 1;
         return res;
       });
-    }, 5000);
+    }, 3000);
     return () => clearInterval();
   }, []);
 
