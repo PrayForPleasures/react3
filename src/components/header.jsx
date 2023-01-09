@@ -7,6 +7,7 @@ import InputBase from "@material-ui/core/InputBase";
 import { alpha, makeStyles } from "@material-ui/core/styles";
 import MenuIcon from "@material-ui/icons/Menu";
 import SearchIcon from "@material-ui/icons/Search";
+import Menu from "./Menu";
 
 function handleClick(e) {
   e.preventDefault();
@@ -113,6 +114,7 @@ export default function Header() {
           </div>
         </Toolbar>
       </AppBar>
+      <Menu></Menu>
     </div>
   );
 }
