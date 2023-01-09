@@ -30,11 +30,11 @@ const useStyles = makeStyles((theme) => ({
     opacity: "1",
   },
   sliderImgPrev: {
-    transition: "2s",
+    transition: "3s",
     opacity: "0",
   },
   sliderImgNext: {
-    transition: "2s",
+    transition: "3s",
     opacity: "0",
   },
 }));
