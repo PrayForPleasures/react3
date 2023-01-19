@@ -20,14 +20,16 @@ const useStyles = makeStyles((theme) => ({
     position: "relative",
     display: "flex",
     alignItems: "center",
+    justifyContent: "center",
     overflow: "hidden",
     height: "100%",
   },
   sliderImg: {
     position: "absolute",
-    maxWidth: "100%",
+    width: "100%",
     transition: "1s",
     opacity: "1",
+    marginLeft: "0.5px",
   },
   sliderImgPrev: {
     transition: "3s",

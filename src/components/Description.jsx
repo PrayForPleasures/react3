@@ -5,6 +5,7 @@ import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
+import "../index.css";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -51,6 +52,7 @@ const useStyles = makeStyles((theme) => ({
     "&:hover": {
       transition: "0.8s",
       backgroundColor: "black",
+      animation: "shake 0.5s infinite",
     },
   },
   flexCardsStyle: {
@@ -69,7 +71,7 @@ export default function Description() {
       <Card className={classes.root} variant="outlined">
         <CardContent>
           <Typography className={classes.title} gutterBottom>
-            {bull} Качество татуировки! {bull}
+            {bull}Качество татуировки!{bull}
           </Typography>
           <Typography className={classes.title2} gutterBottom>
             Только мастера с художественным образованием - эскиз любой
@@ -85,7 +87,7 @@ export default function Description() {
       <Card className={classes.root} variant="outlined">
         <CardContent>
           <Typography className={classes.title} gutterBottom>
-            {bull} Консультация в салоне - бесплатная! {bull}
+            {bull}Консультация в салоне - бесплатная!{bull}
           </Typography>
           <Typography className={classes.title2} gutterBottom>
             Вы можете прийти в студию чтобы узнать конечную стоимость своей
@@ -100,7 +102,7 @@ export default function Description() {
       <Card className={classes.root} variant="outlined">
         <CardContent>
           <Typography className={classes.title} gutterBottom>
-            {bull} Безопасность здоровья! {bull}
+            {bull}Безопасность здоровья!{bull}
           </Typography>
           <Typography className={classes.title2} gutterBottom>
             Только одноразовые инструменты, абсолютно стерильное помещение +
