@@ -13,6 +13,14 @@ import img2 from "../images/ph2.jpg";
 import img3 from "../images/ph7.jpg";
 import img4 from "../images/ph4.jpg";
 import img6 from "../images/ph6.jpg";
+import img7 from "../images/ph16.jpg";
+import img8 from "../images/10.jpg";
+import img9 from "../images/ph19.jpg";
+import img10 from "../images/ph21.jpg";
+import img11 from "../images/ph22.jpg";
+import img12 from "../images/ph23.jpg";
+import img13 from "../images/ph14.jpg";
+import img14 from "../images/ph15.jpg";
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -46,9 +54,6 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "whitesmoke",
     border: "2px solid #222222",
   },
-  divider: {
-    margin: theme.spacing(1, 0),
-  },
   typoStyle: {
     color: "whitesmoke",
     fontFamily: "East Sea Dokdo",
@@ -73,6 +78,10 @@ const useStyles = makeStyles((theme) => ({
   spanStyle: {
     fontWeight: "bold",
   },
+  firstSection: { marginTop: "8px" },
+  secondSection: {
+    marginTop: "24px",
+  },
 }));
 
 export default function Sections() {
@@ -80,14 +89,7 @@ export default function Sections() {
 
   return (
     <div>
-      <Typography
-        variant="subtitle1"
-        gutterBottom
-        className={classes.typoStyle}
-      >
-        OUR WORKS
-      </Typography>
-      <Grid container spacing={3}>
+      <Grid className={classes.firstSection} container spacing={3}>
         <Grid item xs={3}>
           <Card className={classes.paper}>
             <CardMedia className={classes.media} image={img1}></CardMedia>
@@ -117,7 +119,8 @@ export default function Sections() {
         <Grid item xs={4}>
           <Typography variant="subtitle1" className={classes.typoStyle2}>
             <span className={classes.spanStyle}>
-              Тату-салон «RWD Tattoo» осуществляет мечты!
+              Тату-салон «<span className={classes.typoStyle}>RWD Tattoo</span>»
+              осуществляет мечты!
             </span>
             <br />В нём трудятся настоящие профессионалы с авторским стилем и
             креативным подходом к работе, которые не перестают
@@ -130,34 +133,49 @@ export default function Sections() {
         </Grid>
       </Grid>
       <Description></Description>
-      <Divider className={classes.divider} />
-      <Typography
-        variant="subtitle1"
-        gutterBottom
-        className={classes.typoStyle}
-      >
-        OUR WORKS
-      </Typography>
-      <div className={classes.container}>
-        <div style={{ gridColumnEnd: "span 3" }}>
-          <Paper className={classes.paper}>xs=3</Paper>
-        </div>
-        <div style={{ gridColumnEnd: "span 3" }}>
-          <Paper className={classes.paper}>xs=3</Paper>
-        </div>
-        <div style={{ gridColumnEnd: "span 3" }}>
-          <Paper className={classes.paper}>xs=3</Paper>
-        </div>
-        <div style={{ gridColumnEnd: "span 3" }}>
-          <Paper className={classes.paper}>xs=3</Paper>
-        </div>
-        <div style={{ gridColumnEnd: "span 4" }}>
-          <Paper className={classes.paper}>xs=4</Paper>
-        </div>
-        <div style={{ gridColumnEnd: "span 8" }}>
-          <Paper className={classes.paper}>xs=8</Paper>
-        </div>
-      </div>
+      <Grid className={classes.secondSection} container spacing={3}>
+        <Grid item xs={3}>
+          <Card className={classes.paper}>
+            <CardMedia className={classes.media} image={img7}></CardMedia>
+          </Card>
+        </Grid>
+        <Grid item xs={3}>
+          <Card className={classes.paper}>
+            <CardMedia className={classes.media} image={img8}></CardMedia>
+          </Card>
+        </Grid>
+        <Grid item xs={3}>
+          <Card className={classes.paper}>
+            <CardMedia className={classes.media} image={img9}></CardMedia>
+          </Card>
+        </Grid>
+        <Grid item xs={3}>
+          <Card className={classes.paper}>
+            <CardMedia className={classes.media} image={img10}></CardMedia>
+          </Card>
+        </Grid>
+
+        <Grid item xs={3}>
+          <Card className={classes.paper}>
+            <CardMedia className={classes.media} image={img11}></CardMedia>
+          </Card>
+        </Grid>
+        <Grid item xs={3}>
+          <Card className={classes.paper}>
+            <CardMedia className={classes.media} image={img12}></CardMedia>
+          </Card>
+        </Grid>
+        <Grid item xs={3}>
+          <Card className={classes.paper}>
+            <CardMedia className={classes.media} image={img13}></CardMedia>
+          </Card>
+        </Grid>
+        <Grid item xs={3}>
+          <Card className={classes.paper}>
+            <CardMedia className={classes.media} image={img14}></CardMedia>
+          </Card>
+        </Grid>
+      </Grid>
     </div>
   );
 }

@@ -27,6 +27,8 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("sm")]: {
       display: "block",
     },
+    fontFamily: "East Sea Dokdo",
+    fontSize: "28px",
   },
   search: {
     position: "relative",
@@ -94,7 +96,7 @@ export default function Header() {
             <MenuIcon onClick={handleClick} />
           </IconButton>
           <Typography className={classes.title} variant="h6" noWrap>
-            RWD Tattoo Gomel
+            RWD TATTOO GOMEL
           </Typography>
           <a className={classes.phone} href="tel:+375331234567">
             +375 (33) 123-45-67

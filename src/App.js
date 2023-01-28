@@ -1,5 +1,6 @@
 import Header from "./components/header";
 import Sections from "./components/sections";
+import Footer from "./components/Footer";
 import Container from "@material-ui/core/Container";
 import { makeStyles } from "@material-ui/core/styles";
 import backImage from "./images/backPhoto.jpg";
@@ -18,11 +19,17 @@ function App() {
 
   return (
     <Router>
+      <hr></hr>
       <div className={classes.backImg}>
         <Container>
           <Header></Header>
           <Sections></Sections>
         </Container>
+        <hr style={{ marginTop: "24px" }}></hr>
+        <Container>
+          <Footer></Footer>
+        </Container>
+        <hr style={{ marginTop: "16px" }}></hr>
       </div>
     </Router>
   );
