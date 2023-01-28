@@ -76,7 +76,10 @@ const useStyles = makeStyles((theme) => ({
     color: "whitesmoke",
     textDecoration: "none",
     fontWeight: "bold",
-    marginRight: "16px",
+  },
+  addressStyle: {
+    fontSize: "12px",
+    color: "whitesmoke",
   },
 }));
 
@@ -98,9 +101,13 @@ export default function Header() {
           <Typography className={classes.title} variant="h6" noWrap>
             RWD TATTOO GOMEL
           </Typography>
-          <a className={classes.phone} href="tel:+375331234567">
-            +375 (33) 123-45-67
-          </a>
+          <div style={{ marginRight: "16px" }}>
+            <a className={classes.phone} href="tel:+375331234567">
+              +375 (33) 123-45-67
+            </a>
+            <p className={classes.addressStyle}>г. Гомель, Советская 100 к.4</p>
+          </div>
+
           <div className={classes.search}>
             <div className={classes.searchIcon}>
               <SearchIcon />

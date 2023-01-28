@@ -30,7 +30,8 @@ const useStyles = makeStyles((theme) => ({
     height: "20px",
     textDecoration: "none",
     backgroundPosition: "center",
-    backgroundSize: "100%",
+    backgroundSize: "90%",
+    backgroundRepeat: "no-repeat",
     backgroundImage: `url(${inst1})`,
     "&:hover": {
       transition: "0.8s",
@@ -44,7 +45,8 @@ const useStyles = makeStyles((theme) => ({
     height: "20px",
     textDecoration: "none",
     backgroundPosition: "center",
-    backgroundSize: "100%",
+    backgroundSize: "90%",
+    backgroundRepeat: "no-repeat",
     backgroundImage: `url(${vk1})`,
     "&:hover": {
       transition: "0.8s",
@@ -58,7 +60,8 @@ const useStyles = makeStyles((theme) => ({
     height: "20px",
     textDecoration: "none",
     backgroundPosition: "center",
-    backgroundSize: "100%",
+    backgroundSize: "90%",
+    backgroundRepeat: "no-repeat",
     backgroundImage: `url(${tel1})`,
     "&:hover": {
       transition: "0.8s",
@@ -72,7 +75,8 @@ const useStyles = makeStyles((theme) => ({
     height: "20px",
     textDecoration: "none",
     backgroundPosition: "center",
-    backgroundSize: "100%",
+    backgroundSize: "90%",
+    backgroundRepeat: "no-repeat",
     backgroundImage: `url(${tt1})`,
     "&:hover": {
       transition: "0.8s",
@@ -104,32 +108,32 @@ export default function Footer() {
               <li className={classes.liStyle}>
                 <a
                   className={classes.iconInst}
-                  href="#"
-                  title="..."
+                  href="https://www.instagram.com/"
+                  title="Instagram"
                   target="_blank"
                 ></a>
               </li>
               <li className={classes.liStyle}>
                 <a
                   className={classes.iconVK}
-                  href="#"
-                  title="..."
+                  href="https://vk.com"
+                  title="Vk"
                   target="_blank"
                 ></a>
               </li>
               <li className={classes.liStyle}>
                 <a
                   className={classes.iconTel}
-                  href="#"
-                  title="..."
+                  href="https://телеграм.онлайн/"
+                  title="Telegram"
                   target="_blank"
                 ></a>
               </li>
               <li className={classes.liStyle}>
                 <a
                   className={classes.iconTT}
-                  href="#"
-                  title="..."
+                  href="https://www.tiktok.com/"
+                  title="Tik-Tok"
                   target="_blank"
                 ></a>
               </li>
